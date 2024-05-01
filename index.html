@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <body>
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imprimir Ticket</title>
+<body>
     <div>
         <h2>Detalles del Pedido</h2>
-        <p><strong>Comanda:</strong> <span id="comanda"></span></p>
-        <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+        <p><strong>Comanda:</strong> <span id="ID Venta"></span></p>
+        <p><strong>Fecha:</strong> <span id="fecha_hora"></span></p>
         <h3>Resumen del Pedido:</h3>
-        <div id="resumen"></div>
+        <div id="PRINT_PRODUCTOS"></div>
     </div>
 </body>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Imprimir Ticket</title>
+
         <script>
             // Función para obtener parámetros de la URL
             function obtenerParametro(nombre) {
@@ -21,22 +22,21 @@
             }
         
             // Obtener los parámetros de la URL
-            var comanda = obtenerParametro('COMANDA');
-            var fecha = obtenerParametro('FECHA');
-            var resumen = obtenerParametro('resumen');
+            var comanda = obtenerParametro('ID Venta');
+            var fecha = obtenerParametro('fecha_hora');
+            var resumen = obtenerParametro('PRINT_PRODUCTOS');
             var cliente = obtenerParametro('cliente');
-            var subtotal = obtenerParametro('subtotal');
-            var propina = obtenerParametro('propina');
-            var total = obtenerParametro('total');
-            var domicilio = obtenerParametro('domicilio');
+            var subtotal = obtenerParametro('SubTotal');
+            var propina = obtenerParametro('Cantidad Recibida');
+            var total = obtenerParametro('Total');
     
             // Convertir la cadena resumen en un array separado por saltos de línea
             var lineasResumen = resumen.split('\n');
         
             // Escribir la información en el documento HTML
             window.onload = function() {
-                document.getElementById('comanda').innerHTML = comanda;
-                document.getElementById('fecha').innerHTML = fecha;
+                document.getElementById('ID Venta').innerHTML = comanda;
+                document.getElementById('fecha_hora').innerHTML = fecha;
                 // Mostrar cada línea del resumen en un párrafo separado
                 lineasResumen.forEach(function(linea) {
                     var parrafo = document.createElement('p');
@@ -45,9 +45,8 @@
                     document.getElementById('resumen').appendChild(parrafo);
                 document.getElementById('cliente').innerHTML = cliente;
                 document.getElementById('subtotal').innerHTML = subtotal;
-                document.getElementById('propina').innerHTML = propina;
+                document.getElementById('propina').innerHTML = Cantidad Recibida;
                 document.getElementById('total').innerHTML = total;
-                document.getElementById('domicilio').innerHTML = domicilio;
                 });
             };
         </script>

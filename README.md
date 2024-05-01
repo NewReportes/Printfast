@@ -1,2 +1,0 @@
-# Printfast
-Imprimir rápido

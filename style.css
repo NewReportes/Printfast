@@ -13,21 +13,21 @@ table {
 
 td.producto,
 th.producto {
-    width: 75px;
-    max-width: 75px;
+    width: 150px;
+    max-width: 150px;
 }
 
 td.cantidad,
 th.cantidad {
-    width: 40px;
-    max-width: 40px;
+    width: 60px;
+    max-width: 60px;
     word-break: break-all;
 }
 
 td.precio,
 th.precio {
-    width: 40px;
-    max-width: 40px;
+    width: 60px;
+    max-width: 60px;
     word-break: break-all;
 }
 

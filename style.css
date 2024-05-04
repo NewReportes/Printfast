@@ -52,6 +52,6 @@ th.totdetalle {
 }
 
 img {
-    max-width: inherit;
-    width: inherit;
+    max-width: 100px;
+    width: 100px;
 }

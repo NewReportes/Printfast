@@ -5,8 +5,6 @@
 
 td,
 th,
-td1,
-th1,
 tr,
 table {
     width: 300px;
@@ -32,13 +30,13 @@ th.precio {
     max-width: 60px;
     word-break: break-all;
 }
-td1.descdetalle,
-th1.descdetalle {
+td.descdetalle,
+th.descdetalle {
     width: 80px;
     max-width: 80px;
 }
-td1.totdetalle,
-th1.totdetalle {
+td.totdetalle,
+th.totdetalle {
     width: 60px;
     max-width: 60px;
     word-break: break-all;

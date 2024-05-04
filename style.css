@@ -13,8 +13,8 @@ table {
 
 td.producto,
 th.producto {
-    width: 75px;
-    max-width: 75px;
+    width: 95px;
+    max-width: 95px;
 }
 
 td.cantidad,
@@ -26,8 +26,8 @@ th.cantidad {
 
 td.precio,
 th.precio {
-    width: 40px;
-    max-width: 40px;
+    width: 50px;
+    max-width: 50px;
     word-break: break-all;
 }
 
@@ -37,7 +37,7 @@ th.precio {
 }
 
 .ticket {
-    display:block
+    display:block;
     width: 80mm;
     max-width: 155px;
 }

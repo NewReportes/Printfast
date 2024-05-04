@@ -32,8 +32,8 @@ th.precio {
 }
 td.descdetalle,
 th.descdetalle {
-    width: 80px;
-    max-width: 80px;
+    width: 120px;
+    max-width: 120px;
 }
 td.totdetalle,
 th.totdetalle {

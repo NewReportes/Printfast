@@ -32,13 +32,13 @@ th.precio {
 }
 td.descdetalle,
 th.descdetalle {
-    width: 120px;
-    max-width: 120px;
+    width: 50px;
+    max-width: 50px;
 }
 td.totdetalle,
 th.totdetalle {
-    width: 60px;
-    max-width: 60px;
+    width: 30px;
+    max-width: 30px;
     word-break: break-all;
 }
 .centrado {

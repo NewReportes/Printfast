@@ -19,7 +19,6 @@ th.producto {
 
 td.cantidad,
 th.cantidad {
-    text-align: center;
     width: 60px;
     max-width: 60px;
     word-break: break-all;

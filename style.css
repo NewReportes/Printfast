@@ -8,7 +8,6 @@ th,
 tr,
 table {
     width: 300px;
-    border-top: 0px solid black;
     border-collapse: collapse;
 }
 
@@ -38,8 +37,8 @@ th.precio {
 }
 
 .ticket {
-    width: 155px;
-    max-width: 155px;
+    width: 300px;
+    max-width: 300px;
 }
 
 img {

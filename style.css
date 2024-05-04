@@ -19,6 +19,7 @@ th.producto {
 
 td.cantidad,
 th.cantidad {
+    text-align: center;
     width: 60px;
     max-width: 60px;
     word-break: break-all;
@@ -42,6 +43,5 @@ th.precio {
 }
 
 img {
-    max-width: 100PX;
     width: 100PX;
 }

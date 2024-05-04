@@ -32,13 +32,13 @@ th.precio {
 }
 td.descdetalle,
 th.descdetalle {
-    width: 50px;
-    max-width: 50px;
+    width: 20px;
+    max-width: 20px;
 }
 td.totdetalle,
 th.totdetalle {
-    width: 60px;
-    max-width: 60px;
+    width: 100px;
+    max-width: 100px;
 }
 .centrado {
     text-align: center;

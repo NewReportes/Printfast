@@ -7,15 +7,15 @@ td,
 th,
 tr,
 table {
-    width: 75MM;
+    width: 100px;
     border-top: 1px solid black;
     border-collapse: collapse;
 }
 
 td.producto,
 th.producto {
-    width: 55px;
-    max-width: 55px;
+    width: 80px;
+    max-width: 80px;
 }
 
 td.cantidad,
@@ -27,8 +27,8 @@ th.cantidad {
 
 td.precio,
 th.precio {
-    width: 50px;
-    max-width: 50px;
+    width: 70px;
+    max-width: 70px;
     word-break: break-all;
 }
 
@@ -39,7 +39,7 @@ th.precio {
 
 .ticket {
     display:block;
-    width: 80mm;
+    width: 100px;
 }
 
 img {

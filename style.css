@@ -30,15 +30,15 @@ th.precio {
     max-width: 60px;
     word-break: break-all;
 }
-td.descdetalle,
-th.descdetalle {
-    width: 50px;
-    max-width: 50px;
+td.boleta,
+th.boltea {
+    width: 0px;
+    max-width: 0px;
 }
-td.totdetalle,
-th.totdetalle {
-    width: 30px;
-    max-width: 30px;
+td.hora,
+th.hora {
+    width: 80px;
+    max-width: 80px;
     word-break: break-all;
 }
 .centrado {

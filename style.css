@@ -33,8 +33,8 @@ th.precio {
 
 td.totdetalle,
 th.totdetalle {
-    width: 40px;
-    max-width: 40px;
+    width: 20px;
+    max-width: 20px;
 }
 .centrado {
     text-align: center;

@@ -30,7 +30,11 @@ th.precio {
     max-width: 60px;
     word-break: break-all;
 }
-
+td.descdetalle,
+th.descdetalle {
+    width: 80px;
+    max-width: 80px;
+}
 td.totdetalle,
 th.totdetalle {
     width: 60px;

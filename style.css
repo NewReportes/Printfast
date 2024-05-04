@@ -31,6 +31,11 @@ th.precio {
     word-break: break-all;
 }
 
+td.totdetalle,
+th.totdetalle {
+    width: 80px;
+    max-width: 80px;
+}
 .centrado {
     text-align: center;
     align-content: center;
@@ -42,5 +47,6 @@ th.precio {
 }
 
 img {
-    width: 100PX;
+    max-width: 100px;
+    width: 100px;
 }

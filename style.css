@@ -42,6 +42,6 @@ th.precio {
 }
 
 img {
-    max-width: inherit;
-    width: inherit;
+    max-width: 100PX;
+    width: 100PX;
 }

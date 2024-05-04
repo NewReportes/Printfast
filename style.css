@@ -31,7 +31,7 @@ th.precio {
     word-break: break-all;
 }
 td.boleta,
-th.boltea {
+th.boleta {
     width: 0px;
     max-width: 0px;
 }

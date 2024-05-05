@@ -52,8 +52,6 @@ th.hora {
 }
 
 img {
-    display: block;
     max-width: 100px;
     width: 100px;
-    text-align: center;
 }

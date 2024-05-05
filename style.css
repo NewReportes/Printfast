@@ -62,6 +62,6 @@ img {
     width: 120px;
 }
 hr {
-    height: 5px;
-    blackground-color: black;
+    height: 1px;
+    blackground-color: #666;
 }

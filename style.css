@@ -13,8 +13,8 @@ table {
 
 td.producto,
 th.producto {
-    width: 150px;
-    max-width: 150px;
+    width: 140px;
+    max-width: 140px;
 }
 
 td.cantidad,
@@ -25,15 +25,15 @@ th.cantidad {
 }
 td.preciounit,
 th.preciounit {
-    width: 50px;
-    max-width: 50px;
+    width: 60px;
+    max-width: 60px;
     word-break: break-all;
 }
 
 td.precio,
 th.precio {
-    width: 50px;
-    max-width: 50px;
+    width: 60px;
+    max-width: 60px;
     word-break: break-all;
 }
 td.boleta,

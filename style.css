@@ -61,3 +61,7 @@ img {
     max-width: 120px;
     width: 120px;
 }
+lineahoriz {
+    height: 1px;
+    blackground-color: black;
+}

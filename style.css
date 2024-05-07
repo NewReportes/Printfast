@@ -36,11 +36,6 @@ th.precio {
     max-width: 65px;
     word-break: break-all;
 }
-td.boleta,
-th.boleta {
-    width: 0px;
-    max-width: 0px;
-}
 td.hora,
 th.hora {
     width: 80px;

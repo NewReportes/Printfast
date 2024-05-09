@@ -14,9 +14,9 @@
             }
         
             // Obtener los parámetros de la URL
-            var comanda = obtenerParametro('ID VENTA');
-            var fecha = obtenerParametro('fecha_hora');
-            var resumen = obtenerParametro('PRINT_PRODUCTOS');
+            var comanda = obtenerParametro('COMANDA');
+            var fecha = obtenerParametro('fecha');
+            var resumen = obtenerParametro('resumen');
             var subtotal = obtenerParametro('subtotal');
             var total = obtenerParametro('total');
         
@@ -25,14 +25,14 @@
         
             // Escribir la información en el documento HTML
             window.onload = function() {
-                document.getElementById('ID VENTA').innerHTML = comanda;
-                document.getElementById('fecha_hora').innerHTML = fecha;
+                document.getElementById('comanda').innerHTML = comanda;
+                document.getElementById('fecha').innerHTML = fecha;
                 // Mostrar cada línea del resumen en un párrafo separado
                 lineasResumen.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea;
-                    document.getElementById('PRINT_PRODUCTOS').appendChild(parrafo);
+                    document.getElementById('resumen').appendChild(parrafo);
                 document.getElementById('subtotal').innerHTML = subtotal;
                 document.getElementById('total').innerHTML = total;
                 });
@@ -64,8 +64,8 @@
     <table>
                   <td class="descripcion">NRO. BOLETA:  </td><td class="descripcion" style="text-align: left;">0004565434</td>
           <tr>             
-                  <td class="descripcion" style="text-align: left;">FECHA:  </td><td class="descripcion" style="text-align: left;"> 12/12/2024</td>
-                  <td class="descripcion" style="text-align: right;;">HORA:  </td><td class="descripcion" style="text-align: right;"> 13:23:54</td>
+                  <td class="descripcion" style="text-align: left;">FECHA:  </td><td class="descripcion" style="text-align: left;"> "fecha"</td>
+                  <td class="descripcion" style="text-align: right;;">HORA:  </td><td class="descripcion" style="text-align: right;"> "fecha"</td>
           </tr>
     </table>
     <tr>
@@ -106,7 +106,7 @@
       <thead>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>SUBTOTAL: $</b></td>
-                        <td class="precio" style="text-align: right;">5.580</td>
+                        <td class="precio" style="text-align: right;">"subtotal"</td>
                     </tr>
           <tr>
                         <td class="descripcion" style="text-align: right;"><b>TOTAL NETO: $</b></td>
@@ -122,7 +122,7 @@
                     </tr>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>TOTAL: $</b></td>
-                        <td class="precio" style="text-align: right;">4.564</td>
+                        <td class="precio" style="text-align: right;">"total"</td>
                     </tr>
       </thead>
   </table><br>

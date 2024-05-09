@@ -17,8 +17,9 @@
             var comanda = obtenerParametro('COMANDA');
             var fecha = obtenerParametro('fecha');
 	    var hora = obtenerParametro('hora');
-            var resumen = obtenerParametro('resumen');
-	    var resumen1 = obtenerParametro('resumen1');
+            var resumen1 = obtenerParametro('resumen1');
+	    var resumen2 = obtenerParametro('resumen2');
+	    var resumen3 = obtenerParametro('resumen3');
             var subtotal = obtenerParametro('subtotal');
 	    var totalneto = obtenerParametro('totalneto');
 	    var iva = obtenerParametro('iva');
@@ -27,8 +28,9 @@
             var formapago = obtenerParametro('formapago');
 	
             // Convertir la cadena resumen en un array separado por saltos de línea
-            var lineasResumen = resumen.split('\n');
-	var lineasResumen1 = resumen.split('\n');
+            var lineasResumen1 = resumen1.split('\n');
+	var lineasResumen2 = resumen2.split('\n');
+	var lineasResumen3 = resumen3.split('\n');
         
             // Escribir la información en el documento HTML
             window.onload = function() {
@@ -43,11 +45,25 @@
 		document.getElementById('formapago').innerHTML = formapago;
 		    
                 // Mostrar cada línea del resumen en un párrafo separado
-                lineasResumen.forEach(function(linea) {
+                lineasResumen1.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea;
-                    document.getElementById('resumen').appendChild(parrafo);
+                    document.getElementById('resumen1').appendChild(parrafo);
+                });
+
+		                    lineasResumen2.forEach(function(linea) {
+                    var parrafo = document.createElement('p');
+                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea;
+                    document.getElementById('resumen2').appendChild(parrafo);
+                });
+
+		                    lineasResumen3.forEach(function(linea) {
+                    var parrafo = document.createElement('p');
+                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea;
+                    document.getElementById('resumen3').appendChild(parrafo);
                 });
             };
         </script>
@@ -95,9 +111,9 @@
                 </thead>
                 <tbody>
                     <tr>
-			 <td class="cantidad" style="text-align: center;">2</td></td>
-                        <td class="descripcion">COCA COLA 350ML SIN AZUCAR</td>
-                        <td class="preciounit" style="text-align: right;">$800</td>
+			 <td class="cantidad" style="text-align: center;" id="resumen1"</td></td>
+                        <td class="descripcion" id="resumen2"</td>
+                        <td class="preciounit" style="text-align: right;" id="resumen3"</td>
                         <td class="precio" style="text-align: right;">$1.600</td>
                     </tr>
                 

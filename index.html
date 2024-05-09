@@ -45,24 +45,24 @@
 		document.getElementById('formapago').innerHTML = formapago;
 		    
                 // Mostrar cada línea del resumen en un párrafo separado
-                lineasResumen1.forEach(function(linea1) {
+                lineasResumen1.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea1;
+                    parrafo.innerHTML = linea;
                     document.getElementById('resumen1').appendChild(parrafo);
                 });
 
-		                    lineasResumen2.forEach(function(linea2) {
+		                    lineasResumen2.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea2;
+                    parrafo.innerHTML = linea;
                     document.getElementById('resumen2').appendChild(parrafo);
                 });
 
-		                    lineasResumen3.forEach(function(linea3) {
+		                    lineasResumen3.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea3;
+                    parrafo.innerHTML = linea;
                     document.getElementById('resumen3').appendChild(parrafo);
                 });
             };
@@ -110,12 +110,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <div>
-			 <td class="cantidad" style="text-align: center;" id="resumen1"</td></td>
-                        <td class="descripcion" id="resumen2"</td>
-                        <td class="preciounit" style="text-align: right;" id="resumen3"</td>
+                    <tr>
+			 <td class="cantidad" style="text-align: center;" id="resumen1"></td>
+                        <td class="descripcion" id="resumen2"></td>
+                        <td class="preciounit" style="text-align: right;" id="resumen3"></td>
                         <td class="precio" style="text-align: right;">$1.600</td>
-                    </div>
+		    </tr>
                 
                 </tbody>
             </table><br> 

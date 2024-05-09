@@ -33,18 +33,19 @@
                 document.getElementById('comanda').innerHTML = comanda;
                 document.getElementById('fecha').innerHTML = fecha;
 		document.getElementById('hora').innerHTML = hora;
+		document.getElementById('subtotal').innerHTML = subtotal;
+		document.getElementById('totalneto').innerHTML = totalneto;
+		document.getElementById('iva').innerHTML = iva;
+		document.getElementById('descuentos').innerHTML = descuento;
+                document.getElementById('total').innerHTML = total;
 		document.getElementById('formapago').innerHTML = formapago;
+		    
                 // Mostrar cada línea del resumen en un párrafo separado
                 lineasResumen.forEach(function(linea) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea;
                     document.getElementById('resumen').appendChild(parrafo);
-                document.getElementById('subtotal').innerHTML = subtotal;
-		document.getElementById('totalneto').innerHTML = totalneto;
-		document.getElementById('iva').innerHTML = iva;
-		document.getElementById('descuentos').innerHTML = descuento;
-                document.getElementById('total').innerHTML = total;
                 });
             };
         </script>

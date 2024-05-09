@@ -19,8 +19,12 @@
 	    var hora = obtenerParametro('hora');
             var resumen = obtenerParametro('resumen');
             var subtotal = obtenerParametro('subtotal');
+	    var totalneto = obtenerParametro('totalneto');
+	    var iva = obtenerParametro('iva');
+	    var descuento = obtenerParametro('descuento');
             var total = obtenerParametro('total');
-        
+            var formapago = obtenerParametro('formapago');
+	
             // Convertir la cadena resumen en un array separado por saltos de línea
             var lineasResumen = resumen.split('\n');
         
@@ -29,6 +33,7 @@
                 document.getElementById('comanda').innerHTML = comanda;
                 document.getElementById('fecha').innerHTML = fecha;
 		document.getElementById('hora').innerHTML = hora;
+		document.getElementById('formapago').innerHTML = formapago;
                 // Mostrar cada línea del resumen en un párrafo separado
                 lineasResumen.forEach(function(linea) {
                     var parrafo = document.createElement('p');
@@ -36,6 +41,9 @@
                     parrafo.innerHTML = linea;
                     document.getElementById('resumen').appendChild(parrafo);
                 document.getElementById('subtotal').innerHTML = subtotal;
+		document.getElementById('totalneto').innerHTML = totalneto;
+		document.getElementById('iva').innerHTML = iva;
+		document.getElementById('descuentos').innerHTML = descuento;
                 document.getElementById('total').innerHTML = total;
                 });
             };
@@ -108,27 +116,27 @@
       <thead>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>SUBTOTAL: $</b></td>
-                        <td class="precio" style="text-align: right;">"subtotal"</td>
+                        <td class="precio" style="text-align: right;" id="subtotal"</td>
                     </tr>
           <tr>
                         <td class="descripcion" style="text-align: right;"><b>TOTAL NETO: $</b></td>
-                        <td class="precio" style="text-align: right;">3.836</td>
+                        <td class="precio" style="text-align: right;" id="totalneto"</td>
           </tr>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>IVA (19%): $</b></td>
-                        <td class="precio" style="text-align: right;">729</td>
+                        <td class="precio" style="text-align: right;" id="iva"</td>
                     </tr>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>DESCUENTOS: $</b></td>
-                        <td class="precio" style="text-align: right;">1.015</td>
+                        <td class="precio" style="text-align: right;" id="descuento"</td>
                     </tr>
                    <tr>
                         <td class="descripcion" style="text-align: right;"><b>TOTAL: $</b></td>
-                        <td class="precio" style="text-align: right;">"total"</td>
+                        <td class="precio" style="text-align: right;" id="total"</td>
                     </tr>
       </thead>
   </table><br>
-<p style="text-align: left;">METODO PAGO: Efectivo</p><br>
+<p style="text-align: left;"><b>METODO PAGO: </b></p><p id="formapago"></p><br>
     
             <p class="centrado">¡¡GRACIAS POR SU VISITA!!
                 <br>App. Ticket</p>

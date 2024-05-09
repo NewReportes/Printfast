@@ -28,6 +28,7 @@
 	
             // Convertir la cadena resumen en un array separado por saltos de línea
             var lineasResumen = resumen.split('\n');
+	var lineasResumen1 = resumen.split('\n');
         
             // Escribir la información en el documento HTML
             window.onload = function() {
@@ -48,7 +49,7 @@
                     parrafo.innerHTML = linea;
                     document.getElementById('resumen').appendChild(parrafo);
                 });
-	                lineasResumen.forEach(function(linea1) {
+	                lineasResumen1.forEach(function(linea1) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea1;

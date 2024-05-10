@@ -97,7 +97,8 @@
                 </thead>
                 <tbody>
 		   <tr>
-			<td>,index(select(Detalle Venta[Cantidad],[COMANDA]=[_THISROW].[COMANDA]),1)</td>
+			<td class="cantidad" style="text-align: center;">index(select(Detalle Venta[Cantidad],[COMANDA]=[_THISROW].[COMANDA]),1)</td>
+
                         <td>,index(select(Detalle Venta[producto],[COMANDA]=[_THISROW].[COMANDA]),1)</td>
 		   </tr>
                 </tbody>

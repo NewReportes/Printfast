@@ -21,6 +21,7 @@
             var resumen1 = obtenerParametro('resumen1');
 	    var resumen2 = obtenerParametro('resumen2');
 	    var resumen3 = obtenerParametro('resumen3');
+	    var resumen4 = obtenerParametro('resumen4');
             var subtotal = obtenerParametro('subtotal');
 	    var totalneto = obtenerParametro('totalneto');
 	    var iva = obtenerParametro('iva');
@@ -31,7 +32,9 @@
 	
             // Convertir la cadena resumen en un array separado por saltos de línea
             var lineasResumen1 = resumen1.split('\n');
-	var lineasResumen2 = resumen2.split('\n');
+	    var lineasResumen2 = resumen2.split('\n');
+            var lineasResumen3 = resumen3.split('\n');
+	    var lineasResumen4 = resumen4.split('\n');
 	
             // Escribir la información en el documento HTML
             window.onload = function() {
@@ -57,6 +60,18 @@
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea2;
                     document.getElementById('resumen2').appendChild(parrafo);
+                });
+		    		                    lineasResumen3.forEach(function(linea3) {
+                    var parrafo = document.createElement('p');
+                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea3;
+                    document.getElementById('resumen3').appendChild(parrafo);
+                });
+		    		                    lineasResumen4.forEach(function(linea4) {
+                    var parrafo = document.createElement('p');
+                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea4;
+                    document.getElementById('resumen4').appendChild(parrafo);
                 });
             };
         </script>
@@ -106,8 +121,8 @@
 <!--va detalle...-->		<tr>
                         <td class="cantidad" style="text-align: center;" id="resumen1"></td>
                         <td class="descripcion"  id="resumen2"></td>
-                        <td class="preciounit" style="text-align: right;">$850</td>
-                        <td class="precio" style="text-align: right;">$850</td>
+                        <td class="preciounit" style="text-align: right;" id="resumen3"></td>
+                        <td class="precio" style="text-align: right;" id="resumen4"></td>
 		</tr>
                 </tbody>
             </table><br> 

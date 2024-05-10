@@ -20,7 +20,7 @@
 	    var resumen = obtenerParametro('resumen');
             var resumen1 = obtenerParametro('resumen1');
 	    var resumen2 = obtenerParametro('resumen2');
-	    var resumen3 = obtenerParametro('index(select(Detalle Venta[Cantidad],[COMANDA]=[_THISROW].[COMANDA]),1)');
+	    var resumen3 = obtenerParametro('resumen3');
             var subtotal = obtenerParametro('subtotal');
 	    var totalneto = obtenerParametro('totalneto');
 	    var iva = obtenerParametro('iva');
@@ -49,7 +49,13 @@
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea;
-                    document.getElementById('resumen').appendChild(parrafo);
+                    document.getElementById('resumen1').appendChild(parrafo);
+                });
+		    		                    lineasResumen.forEach(function(linea) {
+                    var parrafo = document.createElement('p');
+                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea;
+                    document.getElementById('resumen2').appendChild(parrafo);
                 });
             };
         </script>

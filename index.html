@@ -20,7 +20,7 @@
 	    var resumen = obtenerParametro('resumen');
             var resumen1 = obtenerParametro('resumen1');
 	    var resumen2 = obtenerParametro('resumen2');
-	    var resumen3 = obtenerParametro('resumen3');
+	    var resumen3 = obtenerParametro('index(select(Detalle Venta[Cantidad],[COMANDA]=[_THISROW].[COMANDA]),1)');
             var subtotal = obtenerParametro('subtotal');
 	    var totalneto = obtenerParametro('totalneto');
 	    var iva = obtenerParametro('iva');
@@ -97,9 +97,7 @@
                 </thead>
                 <tbody>
 		   <tr>
-			<td>",index(select(Detalle Venta[Cantidad],[COMANDA]=[_THISROW].[COMANDA]),1),"</td>
-
-                        <td>,index(select(Detalle Venta[producto],[COMANDA]=[_THISROW].[COMANDA]),1)</td>
+			   <td class="cantidad"  id="resumen3"></td>
 		   </tr>
                 </tbody>
             </table><br> 

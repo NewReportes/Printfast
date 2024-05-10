@@ -27,13 +27,11 @@
 	    var descuento = obtenerParametro('descuento');
             var total = obtenerParametro('total');
             var formapago = obtenerParametro('formapago');
+	var productos = obtenerParametro('productos');
 	
             // Convertir la cadena resumen en un array separado por saltos de línea
-            var lineasResumen1 = resumen1.split('\n');
-	var lineasResumen = resumen.split('\n');
-	var lineasResumen2 = resumen2.split('\n');
-	var lineasResumen3 = resumen3.split('\n');
-        
+            var lineasResumen = resumen.split('\n');
+	
             // Escribir la información en el documento HTML
             window.onload = function() {
                 document.getElementById('comanda').innerHTML = comanda;
@@ -52,27 +50,6 @@
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea;
                     document.getElementById('resumen').appendChild(parrafo);
-                });
-		    
-                lineasResumen1.forEach(function(linea) {
-                    var parrafo = document.createElement('p');
-                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea;
-                    document.getElementById('resumen1').appendChild(parrafo);
-                });
-
-		                    lineasResumen2.forEach(function(linea) {
-                    var parrafo = document.createElement('p');
-                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea;
-                    document.getElementById('resumen2').appendChild(parrafo);
-                });
-
-		                    lineasResumen3.forEach(function(linea) {
-                    var parrafo = document.createElement('p');
-                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea;
-                    document.getElementById('resumen3').appendChild(parrafo);
                 });
             };
         </script>
@@ -121,7 +98,7 @@
                 <tbody>
 				<p><span>&lt;&lt;<<Start: SELECT(DETALLE VENTA[id],[comanda]=[comanda]) &gt;&gt;</span></p>
 					<tr>
-						<td><a class="cut">-</a>&lt;&lt;[producto]&gt;&gt;</td>
+						<td><a class="cut">-</a>&lt;&lt;[Producto]&gt;&gt</td>
 						<td><span></span></td>
 				        <td><span>[precio]</span></td>
 						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>

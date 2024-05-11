@@ -164,5 +164,8 @@
                 <br>App. Ticket</p>
         </div>
     </body>
-	window.print()
+w=window.open();
+w.document.write($('.report_left_inner').html());
+w.print();
+w.close();
 </html>

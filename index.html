@@ -167,26 +167,5 @@
 
 	<head>
 
-<script language="VBScript">
-SUB Print()
-OLECMDID_PRINT = 6
-OLECMDEXECOPT_DONTPROMPTUSER = 2
-OLECMDEXECOPT_PROMPTUSER = 1
-'ACA en caso de usar frames,
-'enfocamos el frame a imprimir:
-
-'window.parent.frames.main.document.body.focus()
-window.document.body.focus()
-
-'Llamamos al comando de Impresión Print
-
-on error resume next
-call IEWB.ExecWB (OLECMDID_PRINT, -1)
-
-if err.number <> 0 then
-    alert "No se pudo imprimir"
-end if
-
-END SUB
-
+<a href="javascript:Print ();">Imprimir</a>
 </html>

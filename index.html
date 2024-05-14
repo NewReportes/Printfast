@@ -11,7 +11,7 @@
             }
         
             // Obtener los parámetros de la URL
-            var nro_boleta = obtenerParametro('nro_boleta');
+            var id_boleta = obtenerParametro('id_boleta');
             var fecha = obtenerParametro('fecha');
 	    var hora = obtenerParametro('hora');
 	    var vendedor = obtenerParametro('vendedor');
@@ -35,7 +35,7 @@
 	
             // Escribir la información en el documento HTML
             window.onload = function() {
-                document.getElementById('nro_boleta').innerHTML = nro_boleta;
+                document.getElementById('id_boleta').innerHTML = id_boleta;
                 document.getElementById('fecha').innerHTML = fecha;
 		document.getElementById('hora').innerHTML = hora;
 		document.getElementById('vendedor').innerHTML = vendedor;

@@ -27,7 +27,7 @@
             var formapago = obtenerParametro('formapago');
 	
             // Convertir la cadena resumen en un array separado por saltos de línea
-           var lineasResumen1 = resumen1.split('\n');
+           var lineasResumen1 = resumen1.split('\n'); class style="margin-top:0; margin-bottom:0;"
 	   var lineasResumen2 = resumen2.split('\n');
            var lineasResumen3 = resumen3.split('\n');
 	   var lineasResumen4 = resumen4.split('\n');
@@ -50,7 +50,7 @@
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea1; 
-                    document.getElementById('resumen1').appendChild(parrafo); style: "margin-top:0; margin-bottom:0;"
+                    document.getElementById('resumen1').appendChild(parrafo); 
                 });
 		    		lineasResumen2.forEach(function(linea2) {
                     var parrafo = document.createElement('p');

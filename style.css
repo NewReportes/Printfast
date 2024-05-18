@@ -15,6 +15,8 @@ td.producto,
 th.producto {
     width: 140px;
     max-width: 140px;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 td.cantidad,
@@ -22,12 +24,14 @@ th.cantidad {
     width: 45px;
     max-width: 45px;
     word-break: break-all;
+    overflow-wrap: break-word;
 }
 td.preciounit,
 th.preciounit {
     width: 60px;
     max-width: 60px;
     word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 td.precio,
@@ -35,6 +39,7 @@ th.precio {
     width: 65px;
     max-width: 65px;
     word-break: break-all;
+    overflow-wrap: break-word;
 }
 td.hora,
 th.hora {

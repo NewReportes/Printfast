@@ -46,11 +46,11 @@
 		    
 // Mostrar cada línea del resumen en un párrafo separado
 		    lineasResumen1.forEach(function(linea1) {
-                    var parrafo = document.createElement('n');
+                    const parrafo = document.createElement('n');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea1;
                     document.getElementById('resumen1').appendChild(parrafo); });
-		    
+
 		    lineasResumen2.forEach(function(linea2) {
                     var parrafo = document.createElement('n');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');

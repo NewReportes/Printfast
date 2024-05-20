@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
      <head> 
-<script>
-            // Función para obtener parámetros de la URl
+	<script>
+// Función para obtener parámetros de la URl
             function obtenerParametro(nombre) {
                 nombre = nombre.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
                 var regex = new RegExp('[\\?&]' + nombre + '=([^&#]*)');
@@ -10,7 +10,7 @@
                 return resultados === null ? '' : decodeURIComponent(resultados[1].replace(/\+/g, ' '));
             }
         
-            // Obtener los parámetros de la URL
+// Obtener los parámetros de la URL
             var id_boleta = obtenerParametro('id_boleta');
             var fecha = obtenerParametro('fecha');
 	    var hora = obtenerParametro('hora');
@@ -26,13 +26,13 @@
             var total = obtenerParametro('total');
             var formapago = obtenerParametro('formapago');
 	
-            // Convertir la cadena resumen en un array separado por saltos de línea
+// Convertir la cadena resumen en un array separado por saltos de línea
            var lineasResumen1 = resumen1.split('\n');
 	   var lineasResumen2 = resumen2.split('\n');
            var lineasResumen3 = resumen3.split('\n');
 	   var lineasResumen4 = resumen4.split('\n');
 	
-            // Escribir la información en el documento HTML
+// Escribir la información en el documento HTML
             window.onload = function() {
                 document.getElementById('id_boleta').innerHTML = id_boleta;
                 document.getElementById('fecha').innerHTML = fecha;
@@ -45,11 +45,11 @@
                 document.getElementById('total').innerHTML = total;
 		document.getElementById('formapago').innerHTML = formapago;
 		    
-                // Mostrar cada línea del resumen en un párrafo separado
+ // Mostrar cada línea del resumen en un párrafo separado
 		                lineasResumen1.forEach(function(linea1) {
                     var parrafo = document.createElement('p');
-                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    //parrafo.innerHTML = linea1;
+                    //parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    parrafo.innerHTML = linea1;
                     document.getElementById('resumen1').appendChild(parrafo); 
                 });
 		    		lineasResumen2.forEach(function(linea2) {

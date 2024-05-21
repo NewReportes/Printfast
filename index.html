@@ -57,7 +57,7 @@
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea2;
                     document.getElementById('resumen2').appendChild(parrafo);
-			document.replace(/(\r\n|\n|\r)/gm, "")
+		document.trim();
                });
 		    		lineasResumen3.forEach(function(linea3) {
                     var parrafo = document.createElement('p');

@@ -13,6 +13,7 @@ table {
 }   
 th, td {
   padding: 0px;
+  display: inline-block;
 }
 
 td.producto,

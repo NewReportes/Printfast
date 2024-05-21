@@ -12,7 +12,8 @@ table {
     
 }   
 th, td {
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 td.producto,

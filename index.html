@@ -4,7 +4,7 @@
 	<script>
 // Función para obtener parámetros de la URl
             function obtenerParametro(nombre) {
-                nombre = nombre.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                nombre = nombre.replace(/(\r\n|\n|\r)/gm, "");
                 var regex = new RegExp('[\\?&]' + nombre + '=([^&#]*)');
                 var resultados = regex.exec(location.search);
                 return resultados === null ? '' : decodeURIComponent(resultados[1].replace(/\+/g, ' '));
@@ -56,7 +56,6 @@
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea2;
-		parrafo.replace(/(\r\n|\n|\r)/gm, "");
                     document.getElementById('resumen2').appendChild(parrafo);
 
                });

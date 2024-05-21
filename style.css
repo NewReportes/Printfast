@@ -9,7 +9,8 @@ tr,
 table {
     width: 300px;
     border-collapse: collapse;
-    
+      padding-top: 0px;
+  padding-bottom: 0px;    
 }   
 th, td {
   padding-top: 0px;
@@ -21,6 +22,8 @@ th.producto {
     width: 140px;
     max-width: 140px;
     word-break: break-all;
+      padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 td.cantidad,

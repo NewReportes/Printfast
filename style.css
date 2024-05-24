@@ -8,12 +8,12 @@ th,
 tr,
 table {
     width: 300px;
-    border-collapse: collapse;   
+    border-collapse: collapse;
+    line-height: 1.4;
 }   
 th, td {
   padding-top: 0px;
   padding-bottom: 0px;
-  line-height: 1.4;
 }
 
 td.producto,

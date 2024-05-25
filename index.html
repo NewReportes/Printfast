@@ -46,11 +46,16 @@
 		document.getElementById('formapago').innerHTML = formapago;
 		    
  // Mostrar cada línea del resumen en un párrafo separado
-		    lineasResumen1.forEach(function(linea1) {
-                    var parrafo = document.createElement('p');
-                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
-                    parrafo.innerHTML = linea1;
-                    document.getElementById('resumen1').appendChild(parrafo);});
+		   // lineasResumen1.forEach(function(linea1) {
+                    //var parrafo = document.createElement('p');
+                    //parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
+                    //parrafo.innerHTML = linea1;
+                    //document.getElementById('resumen1').appendChild(parrafo);});
+
+var filas = document.getElementById('resumen1').querySelectorAll('tbody tr');
+    filas.forEach(function(valor, indice, array){
+	if(valor.querySelector('td:last-child').innerText =='no') 
+            valor.style.background= '#ccc';});
 		    
 		    lineasResumen2.forEach(function(linea2) {
                     var parrafo = document.createElement('p');

@@ -16,8 +16,8 @@ th, td {
   line-height: 0px;
 }
 
-td.producto,
-th.producto {
+td.descripcion,
+th.descripcion {
     width: 140px;
     max-width: 140px;
     word-break: break-word;

@@ -27,7 +27,7 @@
             var formapago = obtenerParametro('formapago');
 	
 // Convertir la cadena resumen en un array separado por saltos de línea
-	   // var lineasResumen1 = resumen1.split('\n');
+	    var lineasResumen1 = resumen1.split('\n');
 	    var lineasResumen2 = resumen2.split('\n');
             var lineasResumen3 = resumen3.split('\n');
 	    var lineasResumen4 = resumen4.split('\n');
@@ -46,16 +46,11 @@
 		document.getElementById('formapago').innerHTML = formapago;
 		    
  // Mostrar cada línea del resumen en un párrafo separado
-		   lineasResumen1.forEach(function(valor, indice, array) {
+		   lineasResumen1.forEach(function(linea1) {
                    var parrafo = document.createElement('p');
                    parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                    parrafo.innerHTML = linea1;
                    document.getElementById('resumen1').appendChild(parrafo);});
-
-//var filas = document.getElementById('resumen1').querySelectorAll('tbody tr');
-  //  filas.forEach(function(valor, indice, array){
-	//if(valor.querySelector('td:last-child').innerText =='no') 
-          //  valor.style.background= '#ccc';});
 		    
 		    lineasResumen2.forEach(function(linea2) {
                     var parrafo = document.createElement('p');
@@ -63,13 +58,13 @@
                     parrafo.innerHTML = linea2;
                     document.getElementById('resumen2').appendChild(parrafo);});
 		    
-		    		lineasResumen3.forEach(function(linea3) {
+		    lineasResumen3.forEach(function(linea3) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea3;
                     document.getElementById('resumen3').appendChild(parrafo);});
 		    
-		    		lineasResumen4.forEach(function(linea4) {
+		    lineasResumen4.forEach(function(linea4) {
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea4;

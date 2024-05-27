@@ -20,7 +20,8 @@ th.descripcion {
     width: 160px;
     max-width: 160px;
     word-break: break-all;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
+    overflow: hidden;
 }
 
 td.cantidad,
@@ -38,8 +39,8 @@ th.preciounit {
 
 td.precio,
 th.precio {
-    width: 50px;
-    max-width: 50px;
+    width: 40px;
+    max-width: 40px;
     word-break: break-all;
 }
 td.hora,

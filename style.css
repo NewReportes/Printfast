@@ -20,7 +20,7 @@ th.descripcion {
     width: 160px;
     max-width: 160px;
     overflow-wrap: normal;
-    display: inline;
+    display: block;
     overflow: hidden;
 }
 

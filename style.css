@@ -20,7 +20,7 @@ th.descripcion {
     width: 160px;
     max-width: 160px;
     word-break: break-all;
-    overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 td.cantidad,

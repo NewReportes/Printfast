@@ -25,8 +25,8 @@ th.descripcion {
 
 td.cantidad,
 th.cantidad {
-    width: 35px;
-    max-width: 35px;
+    width: 30px;
+    max-width: 30px;
     word-break: break-all;
 }
 td.preciounit,

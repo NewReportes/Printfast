@@ -56,8 +56,10 @@
                     var parrafo = document.createElement('p');
                     parrafo.classList.add('fs-5', 'text-uppercase', 'text-start');
                     parrafo.innerHTML = linea2;
-		    document.getElementById('resumen2').appendChild(parrafo);    
-		    document.getElementById('resumen2').maxLength = 35;});
+		    document.getElementById('resumen2').appendChild(parrafo);});  
+document.getElementsByName('parrafo')[0].value);
+ if(parrafo > 5){
+        return false;};
 			    
 		    lineasResumen3.forEach(function(linea3) {
                     var parrafo = document.createElement('p');

@@ -48,9 +48,9 @@
  // Mostrar cada línea del resumen en un párrafo separado
   const tbody = document.getElementById('detalleVenta');
   resumen1.forEach(item => {
-    const row = document.createElement('tr');
+    const row = document.createElement('p');
     row.innerHTML = item;
-    tbody.appendChild(row);
+    tbody.getElementById('resumen1').appendChild(row);
   });
 		    
 		  // lineasResumen1.forEach(function(linea1) {
